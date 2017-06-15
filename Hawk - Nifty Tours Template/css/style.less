@@ -1,0 +1,736 @@
+/*
+
+File Name: style.less
+Date: June 2017
+Programmer: Adrian Hawk
+
+*/
+
+/* MOBILE STYLESHEET */
+
+@import 'palette.less';
+@import 'mixins.less';
+
+/* MOBILE STYLESHEET */
+
+.rescontrol{display: none;}
+
+body {
+	font-size: 1em;
+}
+
+.mlogo {
+	float: left;
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+.logo {
+  display: none;
+}
+
+#mphoto {
+  display: inline !important;
+}
+
+.slider {
+  display: none;
+}
+
+.topupperbar {
+	background-color: @color5;
+	height: 3.3em;
+	width: 100%;
+  
+}
+
+.toplowerbar {
+	background-color: @color1;
+	height: .7em;
+	width: 100%;
+}
+
+
+.action {
+  	float: left;
+	border-top-width: 2px;
+	border-top-color: @lightColor;
+	border-top-style: inset;
+	margin-top: 2em;
+	border-bottom-width: 2px;
+	border-bottom-style: outset;
+	border-bottom-color: @lightColor;
+	padding: .5em .3em .2em 20px;
+	width: 16em;
+
+  
+
+    p {
+	text-shadow: 0px 1px 0px @lightColor;
+    margin-bottom: .5em;
+    }
+
+    a {
+	font-size: 0.9em;
+	text-decoration: none;
+	padding: 1.25em .25em 1.25em .25em;
+	width: 100%;
+	transition: all 0.3s ease-in-out 0s;
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	font-weight: bold;
+    }
+}
+
+
+.action a:link, #action a:visited {
+	color: @color6;
+
+}
+
+.action a:hover, #action a:active {
+	color: @color4;
+}
+  
+
+
+
+
+h1 {
+	font-family: Varela, Arial, Helvetica, sans-serif;
+	color: @color6;
+	font-size: 2em;
+	text-shadow: 0px 1px 0px #FFF;
+	margin-bottom: .2em;
+    margin-top: .5em;
+  
+}
+
+h2 {
+	font-family: Varela, Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: @color2;
+	margin: 1em 0 .5em 0;
+	text-shadow: 0px 1px 0px #000;
+}
+
+p  {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+	line-height: 1.25em;
+  
+}
+
+li, a , td{
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#about li {
+	list-style-image: url(../images/compassbullet.png);
+	margin-left: 25px;
+	margin-top: 10px;
+}
+
+
+em {
+	font-style: italic;
+}
+
+.emphasized {
+	color: @color1;
+	font-size: 1em;
+	font-weight: bold;
+    
+}
+
+.mainblock {
+	background-image: url(../images/nifty-map.png);
+	background-repeat: repeat;
+	width: 100%;
+}
+
+.midbar {
+	clear: both;
+	height: .7em;
+	width: 100%;
+	background-color: @color1;
+    
+}
+
+.midtextblock {
+	width: 100%;
+	background-color: @color5;
+
+    p {
+	color: @color8;
+    }
+  
+}
+
+.footerbar {
+	background-color: @color6;
+	width: 100%;
+}
+
+.copyright {
+	float: left;
+	margin-top: 1em;
+	margin-bottom: .5em;
+}
+.copyright p {
+	color: @color3;
+	text-align: left;
+	font-size: 0.75em;
+}
+
+.social {
+	float: left;
+	margin-top: 1em;
+	margin-bottom: .5em;
+}
+.social img {
+	float: left;
+}
+
+.social span {
+	float: left;
+	margin-top: 7px;
+	margin-right: 20px;
+}
+
+
+.social a {
+	font-size: 0.75em;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 100%;
+	transition: all 0.3s ease-in-out 0s;
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	padding-top: 0.25em;
+	padding-right: 0.35em;
+	padding-bottom: 0.25em;
+	padding-left: 0em;
+	margin-bottom: 10px;
+}
+.social a:link, .social a:visited {
+	color: 	@color4;
+}
+.social a:hover, #social a:active {
+	color: 	@lightColor;
+}
+
+
+.container {
+        width: 100%;
+        clear: both;
+}
+
+.form {
+  text-align: left;
+  
+
+  h2 {
+    color: #745577;
+  }
+
+  input {
+        width: 100%;
+        clear: both;
+  }
+  
+
+  textarea {
+        width: 100%;
+        clear: both;
+  }
+  
+
+  #ntSubmit {
+    border: 1px solid black;
+  }
+}
+
+label {
+    color: black;
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    width: 120px;
+    height: 25px;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+#special {
+	float: left;
+	margin-bottom: 40px;
+}
+
+.daytrips {
+	margin-top: 0px;
+	margin-right: 2em;
+	margin-bottom: 0px;
+	margin-left: 3%;
+}
+
+.mapper {
+    width: 100%;
+    height: auto;
+}
+
+/* contact table style sheet ------------------------------------ */
+
+table {
+	width: 100%;
+}
+th {
+	font-family: Varela, Arial, Helvetica, sans-serif;
+	background-color: #482D3C;
+	color: #B07995;
+	font-weight: normal;
+	font-size: .9em;
+}
+th, td {
+	text-align: center;
+	padding: 3px;
+	vertical-align: middle;
+	border: 1px solid #482D3C;
+}
+td {
+	color: #DDC4D2;
+	
+}
+form table {
+	width: 100%;
+}
+form td   {
+	text-align: left;
+	font-size: 1em;
+	border-style: none;
+	padding-right: 10px;
+}
+
+form table td+td {
+	text-align: left;
+}
+
+
+
+/* HD mobile style sheet - above 480px -------------------------------- */
+
+@media screen and (min-width: 481px)  {
+  
+    
+}
+  
+@media screen and (max-width: 529px)  {
+   .action {
+     width: 100%
+   }
+  
+.slider {
+  display: none;
+  
+
+}
+  
+}
+
+
+ @media screen and (min-width: 530px)  {
+   .action {
+     margin-top: 90px;
+   }
+   
+   .slider {
+  display: none;
+}
+   
+   
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+/* tablet style sheet - above 768px ----------------------------------- */
+
+@media screen and (min-width: 769px)  {
+
+.copyright {
+	float: right;
+}
+.copyright p {
+	text-align: right;
+}
+  
+  .slider {
+  display: none;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* desktop style sheet - above 1024px------------------------------------ */
+  
+@media screen and (min-width: 1025px)  {
+ 
+.rescontrol {display:inline;}
+
+
+#contact select  {
+	width: 160px;
+	margin-top: 35px;
+}
+#contact em {
+	font-size: .75em;
+}
+
+  
+  
+  
+  
+.topupperbar {
+	height: .7em;
+}
+
+
+.centerwrap {
+	width: 960px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+}
+  
+.dcenterwrap {
+	width: 1100px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+}
+  
+
+header {
+	padding-top: 1.4em;
+	padding-bottom: 7em;
+	width: 100%;
+}
+
+nav {
+	float: left;
+	width: 450px;
+	border-top-width: 2px;
+	border-top-style: inset;
+	border-top-color: #FFF;
+	margin-top: 90px;
+	border-bottom-width: 2px;
+	border-bottom-style: outset;
+	border-bottom-color: #FFF;
+}
+
+nav ul {
+	background-image: url(./images/nav-button-fill.jpg);
+}
+
+nav li {
+	margin: 0 .25em 0 .25em;
+	list-style-type: none;
+	font-family: Varela, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+
+}
+
+/* Above gives all the list items in all the lists the same properties */
+
+nav li a {
+	font-size: .9em;
+	text-decoration: none;
+	padding: .25em .35em .25em .35em;
+	width: 100%;
+	transition: all 0.1s ease-in-out 0s;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+
+/* Above gives all the list items a tags in all the lists the same properties */
+
+nav ul.level1 li {
+	position: relative;
+	padding: .3em .3em .3em 0;
+	float: left;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px #fff;
+}
+
+/* Above causes all the list items in the level1 ul to float left, which means they will rise up next to each other, one after another. */
+
+nav ul.level2 li {
+	text-transform: none;
+}
+
+nav ul.level3 li {
+	text-transform: none;
+}
+
+nav ul a:link, nav ul a:visited {
+	color: #482D3C;
+}
+nav ul a.current:link, nav ul a.current:visited {
+	color: #e8de11;
+    text-shadow: 2px 2px 3px #3A263D;
+	
+}
+nav ul a:hover, nav ul a:active {
+	color: #fff;
+	text-shadow: 2px 2px 3px #3A263D;
+}
+nav ul a.current:hover, nav ul a.current:active {
+	color: #fff;
+	text-shadow: 2px 2px 3px #3A263D;
+}
+
+nav ul ul {
+	display: none;	
+}
+/* Above causes the ul tags underneath the top ul tag to NOT display (display:none). This is what makes them start out not showing. */
+
+
+nav ul ul li {
+	width: 100%;
+}
+/* Above gives the list items a width that fills the ul block so they don't stack next to each other if the text is shorter. */
+
+
+nav ul ul.level2 li a,nav ul ul ul.level3 li a {
+	padding: 0 .3em 0 .3em ;	
+}
+
+nav ul.level1 li.submenu:hover ul.level2 {
+	position: absolute;
+	display: block; 
+	width: 120%;
+	top: 1.5em; 
+	left: 0.25em;
+  
+	
+/* 120% allows list items in the level2 to not lose their backgrounds if they are longer than the list items in the level1 list item they are under. Adjust upward if the words get any longer. */
+}
+
+nav ul.level2 li.submenu:hover ul.level3 {
+	position: absolute;
+	display: block;
+	width: 7em;
+	left: 3em;
+	top: 1em;
+	text-align: left;
+}
+/* The two above make the submenus appear on a mouse hover over. */
+
+nav ul.level2 li a,nav ul.level3 li a {
+	display: block;
+}
+
+
+/* end navbar */
+
+.mlogo {
+    display:none;
+  }
+  
+.logo {
+     display:inline;
+	 float: left;
+}
+  
+#mphoto {
+  display: none !important;
+}
+
+.slider {
+  display: inline-flex !important;
+}
+
+  
+#about {
+	float: left;
+	width: 400px;
+}
+#about p {
+	margin-bottom: 12px;
+}
+
+#about hr {
+    
+	width: 200px;
+	height:2px;
+	border-width:0;
+	color:gray;
+	background-color:gray;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	
+	padding-right: 50px;
+    
+}
+
+
+
+#slideshow {
+	float: right;
+	width: 522px;
+	height: 350px;
+	margin-bottom: 30px;
+	position: relative;
+	z-index: 10;
+}
+
+#pager {
+	z-index: 20;
+	position: absolute;
+	top: 345px;
+	left:180px;
+}
+#pager a {
+	margin: 0 5px;
+	padding: 3px 5px;
+	border: 1px solid #ccc;
+	background-color: #745577;
+	color: #DDC4D2;
+	text-decoration: none;
+	border-radius: 90%;
+	box-shadow: 2px 2px #DDC4D2;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+}
+#pager a.activeSlide {
+	background-color: #B2A392;
+	color: #000;
+	box-shadow: 0px 0px #CCC;
+}
+#pager a:focus {
+	outline: none;
+}
+
+
+#tours {
+	float: left;
+	width: 100%;
+	margin-bottom: 3em;
+}
+
+#tours a, #special a, #quote a {
+	transition: all 0.3s ease-in-out 0s;
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	text-decoration: none;
+}
+
+#tours a:link, #special a:link, #quote a:link {
+	color: #B2A392;	
+}
+
+#tours a:visited, #special a:visited, #quote a:visited {
+	color: #B2A392;	
+}
+
+
+#tours a:hover, #special a:hover, #quote a:hover {
+	color: #CCC;	
+}
+
+
+
+
+#quote {
+	float: right;
+	margin-bottom: 40px;
+}
+
+footer {
+	width: 100%;
+}
+
+
+
+.tourvideo {
+	width: auto;
+}
+.homespecial {
+	margin-top: 0px;
+	margin-right: 5%;
+	margin-bottom: 0px;
+	margin-left: 5%;
+	width: 30%;
+}
+.otherservices {
+	float: right;
+	width: 60%;
+	margin-left: 5%;
+}
+.contactspecial {
+	float: right;
+	margin-left: 5%;
+}
+
+
+.homequote {
+	width: 30%;
+}
+.rightit {
+	text-align: right;
+}
+
+.centerit {
+	text-align: center;
+}
+.clearit {
+	clear: both;
+}
+.removeit {
+	display: none;
+}
+.includeit {
+	display: block;
+}
+.hideit {
+	visibility: hidden;
+}
+.showit {
+	visibility: visible;
+}
+.imageleft {
+	float: left;
+}
+}
